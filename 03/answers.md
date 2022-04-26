@@ -13,3 +13,15 @@ x * (x + 1) * (x + 2) * (x + 3) * (x + 4)
 
 Note they also share $(x + 4)$.
 
+## c
+
+$x^5 - x$ contains all elements in $F_5$ as its roots.
+$\phi_3$ sharing any factors with it, means that
+$\phi_3$ will be zero at those values of $x$. When
+$\phi_3$ is zero, then the point will be infinity.
+
+We can see those values for $\phi_3$ are when $x = 0, 1$.
+There is no corresponding $y \in K$ for $x = 1$, therefore the points are
+$\{ \infty, (0, 1), (0, -1) \}$.
+
+
