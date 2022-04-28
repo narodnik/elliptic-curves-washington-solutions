@@ -24,4 +24,7 @@ We can see those values for $\phi_3$ are when $x = 0, 1$.
 There is no corresponding $y \in K$ for $x = 1$, therefore the points are
 $\{ \infty, (0, 1), (0, -1) \}$.
 
+# 3.2
 
+The formulas are degree 4 in $x$, which gives 2 roots in $y$ (based on the original EC formula).
+Including the point at infinity there are 9 points and the isomorphic is self evident.
