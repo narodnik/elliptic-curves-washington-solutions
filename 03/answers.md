@@ -28,3 +28,30 @@ $\{ \infty, (0, 1), (0, -1) \}$.
 
 The formulas are degree 4 in $x$, which gives 2 roots in $y$ (based on the original EC formula).
 Including the point at infinity there are 9 points and the isomorphic is self evident.
+
+# 3.3
+
+$$E[2] = \{ \infty, P_1, P_2, P_3 \}$$
+$$e_2(P_i, P_j) = 1 : i \neq j$$
+$$E[2] = 4 \implies E[2] \cong \mathbb{Z}_2 \times \mathbb{Z}_2$$
+Since char $K \neq 2$, means they are coprime.
+$$\implies \{ P_i, P_j \}$ is a basis of $E[2]$ and $e_2(P_i, P_j) = \omega_2 = -1$.
+
+# 3.5
+
+$$\deg \alpha = m^2$$
+\begin{align*}
+e(\alpha(P), \alpha(Q)) &= e(mP, mQ) \\
+    &= e(\underbrace{P + \cdots + P}_m, mQ) \\
+    &= e(P, mQ) \cdots e(P, mQ) \\
+    &= [\underbrace{e(P, Q) \cdots e(P, Q)}_m] \cdots [e(P, Q) \cdots e(P, Q)] \\
+    &= e(P, Q)^{m^2}
+\end{align*}
+
+# 3.6
+
+\begin{align*}
+e(P, kP) &= e(P, P + \cdots + P) \\
+    &= e(P, P)^k = 1
+\end{align*}
+
