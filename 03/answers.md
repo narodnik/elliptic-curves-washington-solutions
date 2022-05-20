@@ -55,3 +55,23 @@ e(P, kP) &= e(P, P + \cdots + P) \\
     &= e(P, P)^k = 1
 \end{align*}
 
+# 3.8
+
+$$\psi_{-n} = -\psi_n$$
+$$\psi_0 = 0, \psi_1 = 1, \psi_{-1} = -1$$
+\begin{align*}
+\psi_{2m}  &= (2y)^{-1} (\psi_m) (\psi_{m + 2} \psi_{m - 1}^2 - \psi_{m - 2} \psi_{m + 1}^2) \\
+\psi_{-2n} &= (2y)^{-1} (\psi_{-n}) (\psi_{-n + 2} \psi_{-n - 1}^2 - \psi_{-n - 2} \psi_{-n + 1}^2) \\
+           &= (2y)^{-1} (-\psi_{n}) (-\psi_{n - 2} \psi_{n + 1}^2 + \psi_{n + 2} \psi_{n - 1}^2) \\
+           &= -(2y)^{-1} (\psi_{n}) (\psi_{n + 2} \psi_{n - 1}^2 - \psi_{n - 2} \psi_{n + 1}^2) \\
+           &= -\psi_{2m}
+\end{align*}
+Let $2m + 1 = -2n - 1 \implies 2m + 2n + 2 = 0 = m + n + 1$
+\begin{align*}
+\psi_{2m + 1}  &= \psi_{m + 2} \psi_{m}^3 - \psi_{m - 1} \psi_{m + 1}^3 \\
+\psi_{-2n - 1} &= \psi_{(-n - 1) + 2} \psi_{-n - 1}^3 - \psi_{(-n - 1) - 1} \psi_{(-n - 1) + 1}^3 \\
+               &= \psi_{-n + 1} \psi_{-n - 1}^3 - \psi_{-n - 2} \psi_{-n}^3 \\
+               &= \psi_{n - 1} \psi_{n + 1}^3 - \psi_{n + 2} \psi_{n}^3 \\
+               &= -\psi_{2m + 1}
+\end{align*}
+
