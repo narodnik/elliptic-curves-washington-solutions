@@ -104,3 +104,9 @@ $$D_{j + k} = (j + k)[P + R] - (j + k)[R] - [(j + k)P] + [\infty]$$
 D_j + D_k &= j[P + R] + k[P + R] - j[R] - k[R] - [jP] - [kP] + 2[\infty] \\
     &= (j + k)[P + R] - (j + k)[R] - [jP] - [kP] + 2[\infty]
 \end{align*}
+
+### Example 11.6
+
+This is the double and add algo. $j$ is the final accumulated value, $k$ is the doubled value.
+
+We count up with $j$ until we reach $n$. $i$ keeps track of how much is left.
