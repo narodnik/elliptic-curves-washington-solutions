@@ -60,6 +60,11 @@ $f(T) = 0 \implies f \circ n (T'') = 0$.
 See [here](https://math.stackexchange.com/questions/4478125/divisors-function-composition-with-multiplication-by-n-map-on-elliptic-curve)
 and Silverman's Proposition II.2.6(c).
 
+Also import from Knapp's book page 316:
+$$\textrm{ord}_x(f) = \textrm{ord}_{\psi(x)}(f \circ \psi^{-1})$$
+Using this we see that
+$$\textrm{ord}_{T'}(f \circ n) = \textrm{ord}_{nT'}(f \circ n \circ n^{-1})$$
+
 # Tate Pairing
 
 $\phi$ is the $q$th power Frobenius. Since $\phi(D) = D$, the points are pemuted without changing the divisor. Since the points satisfy $f(P)$, so $f \in \mathbb{F}_q[x, y]$, and hence $\phi(f) = f$.
