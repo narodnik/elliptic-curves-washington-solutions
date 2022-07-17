@@ -93,3 +93,14 @@ $$y' = \frac{3x^2}{2y}$$
 So we see that $y'_{(3, 6)} = 4$ and that $y = 4x + 1$ is tangent to $(3, 6)$. Likewise $y'_{(6, 1)} = 5$ and $y = 5x - 1$ is tangent to $(6, 1)$
 $$\implies \div\left(\frac{4x - y + 1}{5x - y - 1}\right) = 3[(3, 6)] - 3[(6, 1)]$$
 
+## Miller Loop Divisors
+
+$$D_j = j[P + R] - j[R] - [jP] - [\infty]$$
+$$\div(ax + by + c) = [jP] + [kP] + [-(j + k)P] - 3[\infty]$$
+$$\div(x + d) = [(j + k)P] + [-(j + k)P] - 2[\infty]$$
+$$\div\left(\frac{ax + by + c}{x + d}\right) = [jP] + [kP] - [(j + k)P] - [\infty]$$
+$$D_{j + k} = (j + k)[P + R] - (j + k)[R] - [(j + k)P] + [\infty]$$
+\begin{align*}
+D_j + D_k &= j[P + R] + k[P + R] - j[R] - k[R] - [jP] - [kP] + 2[\infty] \\
+    &= (j + k)[P + R] - (j + k)[R] - [jP] - [kP] + 2[\infty]
+\end{align*}
