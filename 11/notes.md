@@ -52,9 +52,39 @@ $$\div(f \circ n) = n \left(\sum_{R \in E[n]} [T' + R]\right) - n \sum_{R \in E[
 
 ## Function Composition with Multiplication by n Map
 
+$$P \rightarrow nP \rightarrow f(nP)$$
+$T' + R$ generates the group of all $T'' : nT'' = T$.
+
+$f(T) = 0 \implies f \circ n (T'') = 0$.
+
 See [here](https://math.stackexchange.com/questions/4478125/divisors-function-composition-with-multiplication-by-n-map-on-elliptic-curve)
 and Silverman's Proposition II.2.6(c).
 
 # Tate Pairing
 
 $\phi$ is the $q$th power Frobenius. Since $\phi(D) = D$, the points are pemuted without changing the divisor. Since the points satisfy $f(P)$, so $f \in \mathbb{F}_q[x, y]$, and hence $\phi(f) = f$.
+
+# Computation of Pairings
+
+## Calculating Divisors
+
+$3D = 3[(0, 3)] - 3[\infty]$ is easy. We just use the horizontal line that cuts through $(0, 3)$. So $3D = \div(y - 3)$.
+
+Sage code to see points of intersection with the curve:
+
+```python
+sage: R.<x, y> = PolynomialRing(GF(7))
+sage: I = Ideal(y^2 - x^3 - 2, y - 3)
+sage: I.variety()
+[{y: 3, x: 0}]
+```
+
+As expected. We can also observe that the gradient of the line is 0, which is tangent to the curve at this point.
+
+For the divisor
+$$3D_{(5, 1)} = 3[(3, 6)] - 3[(6, 1)]$$
+Observe that the tangent to the curve is calculated by
+$$y' = \frac{3x^2}{2y}$$
+So we see that $y'_{(3, 6)} = 4$ and that $y = 4x + 1$ is tangent to $(3, 6)$. Likewise $y'_{(6, 1)} = 5$ and $y = 5x - 1$ is tangent to $(6, 1)$
+$$\implies \div\left(\frac{4x - y + 1}{5x - y - 1}\right) = 3[(3, 6)] - 3[(6, 1)]$$
+
