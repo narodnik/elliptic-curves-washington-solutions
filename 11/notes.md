@@ -7,6 +7,7 @@ header-includes: |
     - \DeclareMathOperator\div{div}
     - \DeclareMathOperator\deg{deg}
     - \DeclareMathOperator\dsum{sum}
+    - \DeclareMathOperator\supp{supp}
 ---
 
 # Order of Vanishing and Intersection Multiplicity
@@ -114,3 +115,13 @@ We count up with $j$ until we reach $n$. $i$ keeps track of how much is left.
 ### Example 11.7
 
 We are calculating $f_P$, so $R = \infty$.
+
+# Alternative Weil Pairing
+
+$$D_P \sim [P] - [\infty]$$
+$$D_Q \sim [Q] - [\infty]$$
+$$\supp(D_P) \cap \supp(D_Q) = \varnothing$$
+$$e_n(P, Q) = \frac{f_{D_P}(D_Q)}{f_{D_Q}(D_P)}$$
+$$D_P = [P + S] - [S]$$
+$$D_Q = [Q] - [\infty]$$
+
