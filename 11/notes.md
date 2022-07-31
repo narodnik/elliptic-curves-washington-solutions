@@ -125,3 +125,16 @@ $$e_n(P, Q) = \frac{f_{D_P}(D_Q)}{f_{D_Q}(D_P)}$$
 $$D_P = [P + S] - [S]$$
 $$D_Q = [Q] - [\infty]$$
 
+# Linear Equivalence of Riemann Roch Spaces
+
+Let $D' = D + \div{g}$. Then
+$$\phi : \mathcal{L}(D') \rightarrow \mathcal{L}(D)$$
+$$\phi(f) = fg$$
+is an isomorphism.
+
+Proof:
+Let $f \in \mathcal{L}(D)$ then
+$$\div f \geq -D' \iff \div fg = \div f + \div g \geq -D' + \div g$$
+But $-D' + \div g = -D$ so
+$$\div fg \geq -D \implies \div fg \in \mathcal{L}(D)$$
+
