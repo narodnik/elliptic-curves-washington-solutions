@@ -156,6 +156,10 @@ $$e_n(P, Q) = \frac{f_{D_P}(D_Q)}{f_{D_Q}(D_P)}$$
 $$D_P = [P + S] - [S]$$
 $$D_Q = [Q] - [\infty]$$
 
+You can also have
+$$D_Q = [Q + R] - [R]$$
+But the support must be disjoint, and $P, Q \in E[n]$.
+
 # Linear Equivalence of Riemann Roch Spaces
 
 Let $D' = D + \div{g}$. Then
