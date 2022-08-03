@@ -160,6 +160,30 @@ You can also have
 $$D_Q = [Q + R] - [R]$$
 But the support must be disjoint, and $P, Q \in E[n]$.
 
+\begin{align*}
+e_n(P, Q) &= \frac{f_{D_P}(D_Q)}{f_{D_Q}(D_P)} \\
+          &= \frac{f_{D_P}(P + S)}{f_{D_P}(S)} / \frac{f_{D_Q}(Q + T)}{f_{D_Q}(T)}
+\end{align*}
+where $P, Q \in E[n]$ and $S, T \in E(K)$.
+
+## Independence of Choice for $D_Q$.
+
+Let $D_Q' \sim D_Q$, then $D_Q' - D_Q \in \textrm{Prin}(E)$.
+We assume div(h) and $D_P$ have disjoint support. Since $D_Q' \sim D_Q$, then
+$$D_Q' = D_Q + \div{(h)}$$
+$$\div{(f_Q')} = nD_Q', \div{(f_Q)} = nD_Q \implies f_Q' = f_Q h^n$$
+\begin{align*}
+e_n(P, Q) &= \frac{f_{D_P}(D_Q')}{f_{D_Q'}(D_P)} \\
+          &= \frac{f_{D_P}(D_Q)f_{D_P}(\div({h})}{f_{D_Q}(D_P)h(D_P)^n} \\
+\end{align*}
+But note that $h(D_P)^n = h(D_P)\cdots h(D_P) = h(n D_P)$ due to how evaluation on a divisor
+is defined. Since $\div({f_{D_P}}) = n D_P \implies h(D_P)^n = h(\div({f_{D_P}}))$.
+\begin{align*}
+e_n(P, Q) &= \frac{f_{D_P}(D_Q)f_{D_P}(\div({h})}{f_{D_Q}(D_P)h(\div{(f_{D_P})})} \\
+\end{align*}
+Now use the Weil reciprocity to get the relation
+$$e_n(P, Q) = \frac{f_{D_P}(D_Q)}{f_{D_Q}(D_P)}$$
+
 # Linear Equivalence of Riemann Roch Spaces
 
 Let $D' = D + \div{g}$. Then
