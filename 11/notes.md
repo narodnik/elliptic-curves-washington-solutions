@@ -15,6 +15,37 @@ header-includes: |
 Order of vanishing simply means the intersection multiplicity of a point that when evaluated
 on E is zero or a pole.
 
+# Lemma 11.3
+
+Let $P \neq Q$ and $\div{(h)} = [P] - [Q] \implies h(Q) = \infty \implies (h - c)(Q) = \infty$.
+So there must also be one zero of $h - c$.
+
+Let $f \in V(I) : f(Q) \neq 0, \infty$ then
+$$\div{(g)} = \sum \textrm{ord}_R(f) [h(x, y) - h(R)]$$
+remember that $\textrm{ord}_Q(f) = 0$
+
+Let $P$ be a zero of $f$, then the factor in $\div{(g)}$ will be $n [h(x, y) - h(P)]$
+so when $x, y = P$, then $h(x, y) - h(P) = 0$. Therefore $\div{(g)} = \div{(f)}$.
+Therefore they are constant multiples of each other. We can simply adjust $f$ (or $g$) by multiplying
+by a constant so that $f = g$.
+
+Since $h(Q) = \infty$, then if $Q$ is a zero or pole of $f$ then that factor is undefined.
+To illustrate this, assume $\textrm{ord}_Q(f) = 1$, then
+$$f(P) = (h(P) - \infty)\cdots$$
+Since $\infty - \infty$ is undefined, so $f(Q)$ is undefined.
+
+Now lets look at $\textrm{ord}_Q(f) = n$. When $n > 0$, then
+$$\div{(f)} = n[Q] + \cdots$$
+$$\div{(h^n)} = -n[Q] + n[P]$$
+$$\div{(f h^n)} = (n - n)[Q] + \cdots$$
+which shows that $Q$ is not a zero or pole of $f h^n$.
+
+When $n < 0$ then $f$ has a pole at $Q$ and
+$$\div{(f)} = n[Q] + \cdots$$
+$$\div{(f)} = -[Q] + [P]$$
+$$\div{(h^n)} = -n[Q] + n[P]$$
+$$\div{(f h^n)} = (n - n)[Q] + \cdots$$
+
 # Divisors
 
 $$f(x) = (x - a)^3 (x - b)^5$$
