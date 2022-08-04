@@ -89,6 +89,7 @@ Lets look at $(y^4 + 1)$. There are 4 possible values for $y$, and for each $y$,
 values for $x$. Essentially we can look at $\div{(y^4 + 1)} = \div{(\prod (y - y_i))}$.
 
 Let $y = \pm \frac{\sqrt{2}}{2} \pm \frac{\sqrt{2}}{2}$ and $x$ by the solutions for $y^2 = x^3 - x$ giving us 12 points. Then $\div{(y - y_i)} = [P_1] + [P_2] + [P_3] - 3[\infty]$. Adding them up should give us a divisor with 12 unique points total.
+By Bezout's these all have multiplicity of 1.
 
 |         Px         |         Py         |
 |--------------------|--------------------|
