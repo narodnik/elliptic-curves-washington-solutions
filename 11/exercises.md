@@ -110,6 +110,7 @@ $$(x^2 + 1) = (x - i)(x + i)$$
 Giving us 4 values total (since $y^2 = x^3 - x$). Each one of these factors is a vertical line
 that cuts in $+y, -y$, giving us the divisor
 $$\textrm{div}(x^2 + 1) = [(i, 1 - i)] + [(i, -1 + i)] + [(-i, 1 + i)] + [(-i, -1 - i)] - 4[\infty]$$
+$$\textrm{div}((x^2 + 1)^3) = 3[(i, 1 - i)] + 3[(i, -1 + i)] + 3[(-i, 1 + i)] + 3[(-i, -1 - i)] - 12[\infty]$$
 
 Lastly for $g$, we look at $y^4 = 0 \implies y = 0$ and get 2 points $x = \pm 1, y = 0$.
 
