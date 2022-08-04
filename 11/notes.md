@@ -216,3 +216,12 @@ $$\tau*([P]) = [P + S]$$
 
 TODO: finish this proof. check pullback defn
 
+## Simpler Proof
+
+$$\div(f) = m[P] - m[\infty]$$
+Let $h(S) = f(S + T)$ then $h$ has a zero when $S + T = P$
+$\implies S = P - T$
+Likewise a pole at $S + T = \infty$ or $S = -T$
+$$\div(h) = m[P - T] - m[-T]$$
+Multiplicities are left intact.
+
