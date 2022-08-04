@@ -197,3 +197,22 @@ $$\div f \geq -D' \iff \div fg = \div f + \div g \geq -D' + \div g$$
 But $-D' + \div g = -D$ so
 $$\div fg \geq -D \implies \div fg \in \mathcal{L}(D)$$
 
+# Translation Doesn't Change Divisors up to Equivalence
+
+See [here](https://math.stackexchange.com/questions/2446400/pullback-of-a-translation-map-of-a-divisor).
+
+$$\phi : E(K) \rightarrow \textrm{Pic}(E)$$
+$\phi$ is a bijection.
+$$\phi(P) = [P] - [X]$$
+Let $P + Q = R$, then from 11.1, we have
+$$[P] + [Q] - [R] = \div(h)$$
+$$\implies [P] + [Q] \sim [R]$$
+$$([P] - [X]) + ([Q] - [X]) \sim ([R] - [X])$$
+$$[R] \sim [P] + [Q] - [X]$$
+
+So let $D \sim [P] - [X]$.
+The pullback of $\tau(P) = P + S$ is
+$$\tau*([P]) = [P + S]$$
+
+TODO: finish this proof. check pullback defn
+
