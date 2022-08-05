@@ -8,6 +8,9 @@ header-includes: |
     - \DeclareMathOperator\deg{deg}
     - \DeclareMathOperator\dsum{sum}
     - \DeclareMathOperator\supp{supp}
+    - \newcommand{\Pic}[1]{\operatorname{Pic}^0(#1)}
+    - \newcommand{\Div}[1]{\operatorname{Div}^0(#1)}
+    - \newcommand{\inf}{\infty}
 ---
 
 # Order of Vanishing and Intersection Multiplicity
@@ -239,4 +242,35 @@ $\implies S = P - T$
 Likewise a pole at $S + T = \infty$ or $S = -T$
 $$\div(h) = m[P - T] - m[-T]$$
 Multiplicities are left intact.
+
+# Derive Group Law Using Riemann-Roch
+
+[From here](https://math.stackexchange.com/questions/3072705/derive-group-law-on-elliptic-curve-with-riemann-roch?rq=1).
+
+$$J: E(K) \rightarrow \Pic{E}$$
+$$J(P) = [P] - [\inf]$$
+
+## Injective: $J(P) = J(Q) \implies P = Q$
+
+Let $J(P) \sim J(Q)$, then $[P] - [Q] = \div(f)$
+
+From Riemann-Rich, we get $\ell([Q]) = 1$ and since $f \in \mathcal{L}([Q])$, we see that $f$ is
+constant $\implies$ P = Q.
+
+This was also proved in 11.3
+
+## Surjective: $\forall D \in \Pic{E}, \exists P : J(P) = D$
+
+Let $D \in \Div{E}$. $D$ has a canonical representation $[P] - [\inf]$ because $g = 1$.
+
+Now note that $\ell(D + [\inf]) = \ell([P]) = 1$.
+
+Let $f \in \mathcal{L}(D + [\inf])$ be non-constant, then $\div(f) = -D - [\inf] + [P]$.
+
+$$\mathcal{L}(D + [\inf]) = \{ f : \div(f) + [P] \geq 0 \}$$
+$$\deg(\div(f)) = 0$$
+$$\implies \div(f) = -D - [\inf] + [P]$$
+
+We can see that $\deg([P]) = \deg([\inf]) = 1$ so $P \in E(K)$ and so
+$$J(P) = [P] - [\inf] \sim D$$
 
