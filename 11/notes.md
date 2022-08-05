@@ -274,3 +274,6 @@ $$\implies \div(f) = -D - [\inf] + [P]$$
 We can see that $\deg([P]) = \deg([\inf]) = 1$ so $P \in E(K)$ and so
 $$J(P) = [P] - [\inf] \sim D$$
 
+# References
+
+- [A Whirlwind Tour of Elliptic Curves](https://web.northeastern.edu/dummit/docs/talk_NTS_elliptic_curves.pdf)
