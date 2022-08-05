@@ -203,18 +203,33 @@ See [here](https://math.stackexchange.com/questions/2446400/pullback-of-a-transl
 
 $$\phi : E(K) \rightarrow \textrm{Pic}(E)$$
 $\phi$ is a bijection.
-$$\phi(P) = [P] - [X]$$
-Let $P + Q = R$, then from 11.1, we have
-$$[P] + [Q] - [R] = \div(h)$$
-$$\implies [P] + [Q] \sim [R]$$
-$$([P] - [X]) + ([Q] - [X]) \sim ([R] - [X])$$
-$$[R] \sim [P] + [Q] - [X]$$
+$$\phi(P) = [P] - [\infty]$$
 
-So let $D \sim [P] - [X]$.
-The pullback of $\tau(P) = P + S$ is
-$$\tau*([P]) = [P + S]$$
+Define our transformation
+$$\tau: E(K) \rightarrow E(K)$$
+$$\tau(A) = A + Q$$
 
-TODO: finish this proof. check pullback defn
+Let $P + Q = R$, then from 11.2
+$$[R] \sim [P] + [Q] - [\infty]$$
+Let
+$$D \sim [P] - [\infty]$$
+
+$\tau$ is our transformation $\tau(A) = A + Q$ which means
+\begin{align*}
+\tau^*(D) &= \sum n_i [\tau^{-1}(P_i)] \\
+          &\sim [P - Q] - [-Q]
+\end{align*}
+
+Our main question then is whether we can prove $\tau^*D \sim D$
+
+First note that $(P - Q) + Q = P$ and since $[A + B] \sim [A] + [B] - [\infty]$, then
+$[P] \sim [P - Q] + [Q] - [\infty]$ or
+$$[P - Q] \sim [P] + [\infty] - [Q]$$
+Let $P = \infty$ and we see that
+$[-Q] \sim 2[\infty] - [Q]$$
+Subtracting both equations we see that
+$$[P - Q] - [-Q] \sim [P] - [\infty]$$
+$$\implies \tau^*D \sim D$$
 
 ## Simpler Proof
 
