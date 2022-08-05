@@ -150,6 +150,26 @@ We count up with $j$ until we reach $n$. $i$ keeps track of how much is left.
 
 We are calculating $f_P$, so $R = \infty$.
 
+# Lemma 11.23
+
+$d$ is independent of the choice of $X$, so we can use $g(X - U)$ instead of $g(X)$.
+
+# Lemma 11.24
+
+\begin{align*}
+\div(f_T) &= n[T] - n[\inf] \\
+\div(f_T(X_0 - X)) &= n[X_0 - T] - n[X_0] \\
+\div(F_T') &= n[X_0] - n[X_0 - T]
+\end{align*}
+\begin{align*}
+D_S' &= [S] - [\inf] \\
+D_T' &= [X_0] - [X_0 - T]
+\end{align*}
+\begin{alignat*}{2}
+F_T'(D_S') &= \left(\frac{1}{f_T(X_0 - S)}\right)\left(\frac{1}{f_T(X_0)}\right)^{-1} &&= \frac{f_T{X_0}}{f_T{X_0 - S}} \\
+F_S'(D_T') &= f_S(X_0) f_S(X_0 - T)^{-1} &&= \frac{f_S(X_0)}{f_S(X_0 - T)}
+\end{alignat*}
+
 # Alternative Weil Pairing
 
 $$D_P \sim [P] - [\infty]$$
