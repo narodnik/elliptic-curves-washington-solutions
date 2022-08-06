@@ -125,7 +125,9 @@ so they are the same.
 
 # 11.3
 
-$\mathbb{P}^1$ corresponds to 
+This is only true when the genus $g > 1$, in which case $\ell([Q]) \geq 2 - g$. So if $P \neq Q$, then $g > 1$. The statement is that if a curve has a rational function with exactly one zero (of order one), then it is the projective line. 
+
+To show bijection, we first show injective property. Since $\textrm{ker} f = \{ P \}$, this means $f(S) = f(T) \iff S = T$. Secondly for surjectivity, $f(Q) = \infty$, and for the other points, let $p \in \mathbb{P}^1$. We want to find $R$ with $f(R) = p$. $f$ has the same divisor $f(X) = (X - P)$ in affine space which is the equation of a line.
 
 # 11.4
 
