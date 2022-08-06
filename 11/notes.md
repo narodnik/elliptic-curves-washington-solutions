@@ -10,6 +10,7 @@ header-includes: |
     - \DeclareMathOperator\supp{supp}
     - \DeclareMathOperator\ord{ord}
     - \DeclareMathOperator\Hom{Hom}
+    - \DeclareMathOperator\ker{ker}
     - \newcommand{\Pic}[1]{\operatorname{Pic}^0(#1)}
     - \newcommand{\Div}[1]{\operatorname{Div}^0(#1)}
     - \newcommand{\inf}{\infty}
@@ -181,6 +182,15 @@ $$\alpha(1 + 1) = \alpha(1) \cdot \alpha(1) = \alpha(1)^2$$
 $$\implies \alpha(1)^m = \alpha(m \cdot 1)$$
 
 The map $\Phi$ is a decomposition into the group's basis.
+
+# Lemma 11.31
+
+$$P, Q \in E(\mathbb{F}_q)[n], R \in E(\bar{\mathbb{F}_q}) : Q = nR$$
+Since the pairing is 1, so $R - \phi R \in \ker \psi = (\phi - 1) E[n]$. So there must be a $T \in E[n]$
+such that $R = -T$ or $R - \phi R = \phi T - T$ since $\phi(-R) = \phi(R_x, -R_y) = (\phi(R_x), -\phi(R_y)) = -\phi(T)$.
+We can rearrange this to get
+$$\phi(R + T) = R + T$$
+This means $\phi$ fixes the coordinates in $\mathbb{F}_q \implies R + T \in E(\mathbb{F}_q)$ and $Q = n(R + T)$.
 
 # Alternative Weil Pairing
 
