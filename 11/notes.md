@@ -8,6 +8,8 @@ header-includes: |
     - \DeclareMathOperator\deg{deg}
     - \DeclareMathOperator\dsum{sum}
     - \DeclareMathOperator\supp{supp}
+    - \DeclareMathOperator\ord{ord}
+    - \DeclareMathOperator\Hom{Hom}
     - \newcommand{\Pic}[1]{\operatorname{Pic}^0(#1)}
     - \newcommand{\Div}[1]{\operatorname{Div}^0(#1)}
     - \newcommand{\inf}{\infty}
@@ -170,6 +172,16 @@ F_T'(D_S') &= \left(\frac{1}{f_T(X_0 - S)}\right)\left(\frac{1}{f_T(X_0)}\right)
 F_S'(D_T') &= f_S(X_0) f_S(X_0 - T)^{-1} &&= \frac{f_S(X_0)}{f_S(X_0 - T)}
 \end{alignat*}
 
+# Lemma 11.26
+
+We can see this because $\ord(\alpha) = |B|$ so by Lagrange's theorem $|B| \mid |Hom(B)|$,
+but also $|A| \mid n$. Since the pairing function is non-degenerate, values must be unique.
+$$\alpha(1) = \mu$$
+$$\alpha(1 + 1) = \alpha(1) \cdot \alpha(1) = \alpha(1)^2$$
+$$\implies \alpha(1)^m = \alpha(m \cdot 1)$$
+
+The map $\Phi$ is a decomposition into the group's basis.
+
 # Alternative Weil Pairing
 
 $$D_P \sim [P] - [\infty]$$
@@ -285,7 +297,7 @@ Let $D \in \Div{E}$. $D$ has a canonical representation $[P] - [\inf]$ because $
 
 Now note that $\ell(D + [\inf]) = \ell([P]) = 1$.
 
-Let $f \in \mathcal{L}(D + [\inf])$ be non-constant, then $\div(f) = -D - [\inf] + [P]$.
+Take $f \in \mathcal{L}(D + [\inf])$ as a generator, then $\div(f) = -D - [\inf] + [P]$.
 
 $$\mathcal{L}(D + [\inf]) = \{ f : \div(f) + [P] \geq 0 \}$$
 $$\deg(\div(f)) = 0$$
