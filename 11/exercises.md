@@ -126,3 +126,9 @@ so they are the same.
 # 11.3
 
 $\mathbb{P}^1$ corresponds to 
+
+# 11.4
+
+Let $g(X) = f(X) - f(P_0)$ for some $P_0$, then $g$ has a zero at $P_0$.
+Since $\deg(\div(g)) = 0$, this means $g$ has a pole. This also means $f$
+has a pole and hence a zero, but this is a contradiction so $f$ must be constant.
