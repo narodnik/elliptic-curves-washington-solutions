@@ -127,7 +127,9 @@ so they are the same.
 
 This is only true when the genus $g > 1$, in which case $\ell([Q]) \geq 2 - g$. So if $P \neq Q$, then $g > 1$. The statement is that if a curve has a rational function with exactly one zero (of order one), then it is the projective line. 
 
-To show bijection, we first show injective property. Since $\textrm{ker} f = \{ P \}$, this means $f(S) = f(T) \iff S = T$. Secondly for surjectivity, $f(Q) = \infty$, and for the other points, let $p \in \mathbb{P}^1$. We want to find $R$ with $f(R) = p$. $f$ has the same divisor $f(X) = (X - P)$ in affine space which is the equation of a line.
+A non-constant morphism between curves is finite surjective. $P$ and $Q$ are the preimages of $f$ for $0, \infty$, so $f$ must be finite of degree one or an isomorphism.
+
+See [5.10 and 5.12](https://math.mit.edu/classes/18.783/2017/LectureNotes5.pdf).
 
 # 11.4
 

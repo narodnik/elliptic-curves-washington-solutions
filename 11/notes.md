@@ -320,3 +320,4 @@ $$J(P) = [P] - [\inf] \sim D$$
 
 - [A Whirlwind Tour of Elliptic Curves](https://web.northeastern.edu/dummit/docs/talk_NTS_elliptic_curves.pdf)
 - [Projective embedding of proper algebraic curves](https://web.ma.utexas.edu/users/gregoric/EmbeddingCurves.pdf)
+
